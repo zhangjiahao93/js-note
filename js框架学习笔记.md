@@ -1,3 +1,19 @@
+# CSS
+
+## 什么是BFC？
+
+Block Formatting context 的英文拆解
+
+- Block：Block-level Box 指的是块级盒子标准
+
+- Formatting context: 块级上下文格式化，他是页面中的一块渲染区域，并且有一套渲染规则，它决定了其子元素将如何定位，以及和其他元素的关系和相互作用
+
+BFC是指一个**独立的渲染区域，只有Block-level Box参与，它规定了内部Block-level Box如何布局，并且与这个区域外部毫不相干**
+
+它的作用是**在一个独立区域，让BFC内部的元素与外部的元素相互隔离**
+
+ 
+
 # 框架基础
 
 ## 什么是Virtual Dom?
@@ -97,3 +113,21 @@ Proxy 是es6 提出的js对象拦截方法，外界在对对象进行访问时�
 ### 为什么要用react-fiber?
 
 大型react应用中每次渲染页面都是同步的（v16以前），而且js是单线程的，如果渲染页面占用了大量时间会导致用户直接操作（输入框）的动作被卡住，必须等待渲染完毕后才能执行输入这个动作。这大大影响了用户的体验，react-fiber 就为了这个而生
+
+
+
+
+
+# Vue
+
+## vue 生命周期
+
+![vue 生命周期](vue 生命周期.png)
+
+| [mount]       | [update]     | [destory]     |
+| ------------- | ------------ | ------------- |
+| beforeCreate  | beforeUpdate | beforeDestory |
+| created       | updated      | destoryed     |
+| beforeMounted |              |               |
+| mounted       |              |               |
+
